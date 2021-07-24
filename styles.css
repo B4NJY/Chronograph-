@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road&family=Exo:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    
+}
+
+/*Variables*/
+
+:root{
+    --primary-color: #000;
+    --primary-font:"exo", san-serif;
+    --secondary-font:"turret road", san-serif;
+}
+
+body{
+    background: var(--primary-color);
+    color: #fff;
+    font-family: var(--primary-font);
+    height: 100%;
+
+}
+
+.wrapper {
+    margin: 1.875em auto;
+    text-align: center;
+    width: 50em;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 100;
+    font-size: 2.6em;
+}
+
+#minutes, #seconds, #miliseconds {
+    font-family: var(--secondary-font);
+    font-size: 3em;
+    
+} 
+
+button {
+    background: var(--primary-color);
+    border: solid 2px #fff;
+    cursor:pointer; 
+    color: #fff;
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    margin: 0.4em;
+    outline: none;
+    padding: 0.5em 0em 0.5em 0em;
+    text-decoration: none;
+    width: 10.25em;    
+}
+
+button:hover{
+    background: #fff;
+    border: solid 1px #fff;
+    color: var(--primary-color);
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.timer, #seconds , #miliseconds , #minutes{
+    color: tomato;
+    font-family:serif;
+}
+
+@media (max-width:780px) {
+    h1,h2,h3 {
+        font-size: 2em;
+    }
+    
+    .wrapper{
+        width: 35em;
+    }
+} 
+
